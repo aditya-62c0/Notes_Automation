@@ -1,0 +1,17 @@
+2026-05-06 19:23:54 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 19:23:56 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 19:23:57 | INFO     | LoginPage | Login page loaded
+2026-05-06 19:23:57 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-06 19:23:57 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-06 19:23:59 | INFO     | conftest | UI login complete
+2026-05-06 19:24:00 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 19:24:00 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 19:24:00 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-06 19:24:00 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 19:24:00 | INFO     | api.api_client | ← POST /users/login | status=200 | 461ms
+2026-05-06 19:24:00 | INFO     | api.api_client | API login successful — token acquired
+2026-05-06 19:24:00 | INFO     | api.api_client | ← POST /notes | status=200 | 345ms
+2026-05-06 19:24:00 | INFO     | NotesPage | JS window.location.reload()
+2026-05-06 19:24:12 | INFO     | NotesPage | Notes visible in UI: []
+2026-05-06 19:24:12 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_api_delete_note_disappears_from_ui_20260506_192412.png
+2026-05-06 19:24:12 | INFO     | conftest | Browser closed

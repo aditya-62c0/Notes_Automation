@@ -1,0 +1,13 @@
+10:54:46 | INFO     | conftest | Launching browser: chrome | headless=False
+10:54:46 | INFO     | WDM | xdist worker is: gw2
+10:54:46 | INFO     | WDM | ====== WebDriver manager ======
+10:54:46 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:49 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:49 | INFO     | WDM | Driver [/Users/sjaditya/.wdm/gw2/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:54:51 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:54:52 | INFO     | LoginPage | Login page loaded
+10:54:52 | DEBUG    | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:54:52 | DEBUG    | LoginPage | Clicking ('css selector', "button[type='submit']")
+10:54:54 | WARNING  | LoginPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+10:54:54 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-NEG-01-PASS_20260507_105454.png
+10:54:54 | INFO     | conftest | Browser closed

@@ -1,0 +1,6 @@
+GET https://practice.expandtesting.com/notes/api/notes
+Status: 401
+Time: 916ms
+
+Response:
+{"success":false,"status":401,"message":"No authentication token specified in x-auth-token header"}

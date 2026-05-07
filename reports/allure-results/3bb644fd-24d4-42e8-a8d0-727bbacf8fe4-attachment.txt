@@ -1,0 +1,35 @@
+2026-05-07 00:15:12 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-07 00:15:13 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-07 00:15:14 | INFO     | LoginPage | Login page loaded
+2026-05-07 00:15:14 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-07 00:15:15 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-07 00:15:17 | INFO     | conftest | UI login complete
+2026-05-07 00:15:17 | INFO     | NotesPage | Already on dashboard page
+2026-05-07 00:15:17 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 00:15:17 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-07 00:15:17 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 00:15:17 | INFO     | api.api_client | ← POST /users/login | status=200 | 654ms
+2026-05-07 00:15:17 | INFO     | api.api_client | API login successful — token acquired
+2026-05-07 00:15:18 | WARNING  | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+2026-05-07 00:15:19 | WARNING  | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+2026-05-07 00:15:20 | INFO     | NotesPage | Note submitted: E2E Note 1778093117
+2026-05-07 00:15:30 | INFO     | NotesPage | Success banner found in DOM
+2026-05-07 00:15:31 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260507_001530.png
+2026-05-07 00:15:42 | INFO     | NotesPage | [WAIT] Attempt 1 → 3 cards
+2026-05-07 00:15:43 | INFO     | NotesPage | [WAIT] Attempt 2 → 3 cards
+2026-05-07 00:15:44 | INFO     | NotesPage | [WAIT] Attempt 3 → 3 cards
+2026-05-07 00:15:45 | INFO     | NotesPage | [WAIT] Attempt 4 → 3 cards
+2026-05-07 00:15:46 | INFO     | NotesPage | [WAIT] Attempt 5 → 3 cards
+2026-05-07 00:15:47 | INFO     | NotesPage | [WAIT] Attempt 6 → 3 cards
+2026-05-07 00:15:48 | INFO     | NotesPage | [WAIT] Attempt 7 → 3 cards
+2026-05-07 00:15:49 | INFO     | NotesPage | [WAIT] Attempt 8 → 3 cards
+2026-05-07 00:15:50 | INFO     | NotesPage | [WAIT] Attempt 9 → 3 cards
+2026-05-07 00:15:51 | INFO     | NotesPage | [WAIT] Attempt 10 → 3 cards
+2026-05-07 00:15:52 | INFO     | NotesPage | [WAIT] Attempt 11 → 3 cards
+2026-05-07 00:15:53 | INFO     | NotesPage | [WAIT] Attempt 12 → 3 cards
+2026-05-07 00:15:55 | INFO     | NotesPage | [WAIT] Attempt 13 → 3 cards
+2026-05-07 00:15:56 | INFO     | NotesPage | [WAIT] Attempt 14 → 3 cards
+2026-05-07 00:15:57 | INFO     | NotesPage | [WAIT] Attempt 15 → 3 cards
+2026-05-07 00:15:58 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-note-visible_20260507_001558.png
+2026-05-07 00:15:58 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260507_001558.png
+2026-05-07 00:15:58 | INFO     | conftest | Browser closed

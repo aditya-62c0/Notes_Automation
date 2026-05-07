@@ -1,0 +1,18 @@
+2026-05-07 10:46:21 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-07 10:46:22 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-07 10:46:26 | INFO     | LoginPage | Login page loaded
+2026-05-07 10:46:26 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-07 10:46:27 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-07 10:46:29 | INFO     | conftest | UI login complete
+2026-05-07 10:46:29 | INFO     | NotesPage | Already on dashboard page
+2026-05-07 10:46:29 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 10:46:29 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-07 10:46:29 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 10:46:31 | INFO     | NotesPage | Note submitted: Automation Note 1778130989
+2026-05-07 10:47:15 | INFO     | NotesPage | No explicit banner — dashboard visible, form closed; treating as success
+2026-05-07 10:47:15 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-success-banner_20260507_104715.png
+2026-05-07 10:47:15 | INFO     | NotesPage | Already on dashboard page
+2026-05-07 10:47:15 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 10:47:16 | INFO     | NotesPage | Notes visible in UI: ['Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+2026-05-07 10:47:16 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-PASS_20260507_104716.png
+2026-05-07 10:47:16 | INFO     | conftest | Browser closed

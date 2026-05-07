@@ -1,0 +1,11 @@
+10:34:22 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+10:34:22 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+10:34:22 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:34:22 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:34:22 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:34:23 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:34:24 | [32mINFO    [0m | LoginPage | Login page loaded
+10:34:24 | [35mDEBUG   [0m | LoginPage | Clicking ('css selector', "button[type='submit']")
+10:34:26 | [33mWARNING [0m | LoginPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+10:34:26 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-03-PASS_20260507_103426.png
+10:34:26 | [32mINFO    [0m | conftest | Browser closed

@@ -1,0 +1,31 @@
+ui:
+  base_url: "https://practice.expandtesting.com/notes/app"
+  login_url: "https://practice.expandtesting.com/notes/app/login"
+  implicit_wait: 10
+  explicit_wait: 15
+  page_load_timeout: 60
+  browser: "chrome"
+  headless: false
+  execution: "local"   # local or remote
+  grid_url: "http://localhost:4444/wd/hub"
+
+api:
+  base_url: "https://practice.expandtesting.com/notes/api"
+  timeout: 30
+  max_response_time_ms: 2000
+
+credentials:
+  email: "hihello@gmail.com"      # ← replace with your registered email
+  password: "Hi@hello"            # ← replace with your password
+  name: "qwerty"
+
+note:
+  title: "Automation Note"
+  description: "Created by Selenium Python Automation"
+  category: "Home"
+
+reporting:
+  allure_results_dir: "reports/allure-results"
+  html_report: "reports/html/report.html"
+  screenshot_dir: "reports/screenshots"
+  log_dir: "logs"

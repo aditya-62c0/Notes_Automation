@@ -1,0 +1,3 @@
+2026-05-06 19:24:33 | INFO     | api.api_client | ← POST /users/login | status=200 | 613ms
+2026-05-06 19:24:33 | INFO     | api.api_client | API login successful — token acquired
+2026-05-06 19:24:34 | INFO     | api.api_client | ← DELETE /notes/000000000000000000000000 | status=404 | 460ms

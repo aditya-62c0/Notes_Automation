@@ -1,0 +1,2 @@
+Response time: 4718 ms
+Threshold: 2000 ms

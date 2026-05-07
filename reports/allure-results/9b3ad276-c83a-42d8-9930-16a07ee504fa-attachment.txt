@@ -1,0 +1,30 @@
+19:24:36 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+19:24:36 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+19:24:36 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:24:36 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:24:36 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+19:24:37 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+19:24:38 | [32mINFO    [0m | LoginPage | Login page loaded
+19:24:38 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+19:24:38 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+19:24:38 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+19:24:38 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+19:24:40 | [32mINFO    [0m | conftest | UI login complete
+19:24:40 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:24:40 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:24:40 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+19:24:41 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:24:41 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+19:24:42 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+19:24:42 | [35mDEBUG   [0m | NotesPage | Typing 'Automation Note 1778075681' into ('id', 'title')
+19:24:42 | [35mDEBUG   [0m | NotesPage | Typing 'Selenium Python Pytest automation test' into ('id', 'description')
+19:24:42 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+19:24:43 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+19:24:44 | [32mINFO    [0m | NotesPage | Note submitted: Automation Note 1778075681
+19:24:54 | [32mINFO    [0m | NotesPage | Success banner found in DOM
+19:24:54 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-success-banner_20260506_192454.png
+19:24:54 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:24:54 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:25:04 | [32mINFO    [0m | NotesPage | Notes visible in UI: []
+19:25:04 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_create_note_valid_20260506_192504.png
+19:25:04 | [32mINFO    [0m | conftest | Browser closed

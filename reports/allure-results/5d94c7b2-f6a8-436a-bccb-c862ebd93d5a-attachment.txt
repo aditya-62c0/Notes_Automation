@@ -1,0 +1,25 @@
+19:23:54 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+19:23:54 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+19:23:55 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:23:55 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:23:55 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+19:23:56 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+19:23:57 | [32mINFO    [0m | LoginPage | Login page loaded
+19:23:57 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+19:23:57 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+19:23:57 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+19:23:57 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+19:23:59 | [32mINFO    [0m | conftest | UI login complete
+19:24:00 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:24:00 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:24:00 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+19:24:00 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:24:00 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+19:24:00 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 461ms
+19:24:00 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+19:24:00 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+19:24:00 | [32mINFO    [0m | api.api_client | ← POST /notes | status=200 | 345ms
+19:24:00 | [32mINFO    [0m | NotesPage | JS window.location.reload()
+19:24:12 | [32mINFO    [0m | NotesPage | Notes visible in UI: []
+19:24:12 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_api_delete_note_disappears_from_ui_20260506_192412.png
+19:24:12 | [32mINFO    [0m | conftest | Browser closed

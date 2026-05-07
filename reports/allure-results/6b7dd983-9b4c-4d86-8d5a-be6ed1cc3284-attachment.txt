@@ -1,0 +1,21 @@
+10:24:39 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+10:24:39 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+10:24:39 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:24:40 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:24:40 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:24:41 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:24:42 | [32mINFO    [0m | LoginPage | Login page loaded
+10:24:42 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:24:42 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:24:42 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+10:24:43 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:24:45 | [32mINFO    [0m | conftest | UI login complete
+10:24:45 | [32mINFO    [0m | NotesPage | Already on dashboard page
+10:24:45 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:24:45 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+10:24:45 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:24:45 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+10:24:45 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 776ms
+10:24:45 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+10:24:46 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260507_102445.png
+10:24:46 | [32mINFO    [0m | conftest | Browser closed

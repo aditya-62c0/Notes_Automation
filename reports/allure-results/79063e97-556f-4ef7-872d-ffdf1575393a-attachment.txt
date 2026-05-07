@@ -1,0 +1,5 @@
+21:21:15 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+21:21:16 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 556ms
+21:21:16 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+21:21:16 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+21:21:16 | [32mINFO    [0m | api.api_client | ← POST /notes | status=400 | 506ms

@@ -1,0 +1,22 @@
+10:54:54 | INFO     | conftest | Launching browser: chrome | headless=False
+10:54:54 | INFO     | WDM | xdist worker is: gw2
+10:54:54 | INFO     | WDM | ====== WebDriver manager ======
+10:54:54 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:54 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:54 | INFO     | WDM | Driver [/Users/sjaditya/.wdm/gw2/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:54:55 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:54:57 | INFO     | LoginPage | Login page loaded
+10:54:57 | DEBUG    | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:54:57 | DEBUG    | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:54:57 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+10:54:57 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:54:59 | INFO     | conftest | UI login complete
+10:55:00 | INFO     | NotesPage | Already on dashboard page
+10:55:00 | INFO     | NotesPage | Notes dashboard loaded
+10:55:00 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+10:55:00 | INFO     | NotesPage | Notes dashboard loaded
+10:55:00 | DEBUG    | NotesPage | Clicking ('xpath', "//button[contains(., '+ Add Note')]")
+10:55:01 | WARNING  | NotesPage | Click intercepted on ('xpath', "//button[contains(., '+ Add Note')]") — falling back to JS click
+10:55:03 | INFO     | NotesPage | Note submitted: Instant Visibility 1778131500
+10:55:17 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-06-DOM-check_20260507_105517.png
+10:55:17 | INFO     | conftest | Browser closed

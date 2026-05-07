@@ -1,0 +1,9 @@
+22:00:43 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+22:00:43 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 519ms
+22:00:43 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+22:00:43 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+22:00:44 | [32mINFO    [0m | api.api_client | ← POST /notes | status=200 | 388ms
+22:00:44 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fb6cb481124e02985b8006
+22:00:44 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fb6cb481124e02985b8006 | status=200 | 408ms
+22:00:44 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+22:00:44 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 283ms

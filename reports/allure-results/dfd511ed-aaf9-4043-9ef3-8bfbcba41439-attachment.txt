@@ -1,0 +1,39 @@
+10:33:24 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+10:33:24 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+10:33:24 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:33:24 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:33:24 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:33:25 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:33:26 | [32mINFO    [0m | LoginPage | Login page loaded
+10:33:26 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:33:26 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:33:26 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+10:33:27 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:33:29 | [32mINFO    [0m | conftest | UI login complete
+10:33:29 | [32mINFO    [0m | NotesPage | Already on dashboard page
+10:33:29 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:33:29 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+10:33:29 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:33:29 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+10:33:29 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 650ms
+10:33:29 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+10:33:29 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., '+ Add Note')]")
+10:33:30 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., '+ Add Note')]") — falling back to JS click
+10:33:33 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778130209
+10:33:55 | [32mINFO    [0m | NotesPage | Dashboard visible after save | URL=https://practice.expandtesting.com/notes/app
+10:33:55 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(normalize-space(),'All')]")
+10:33:55 | [32mINFO    [0m | NotesPage | Opened All tab
+10:33:58 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(normalize-space(),'All')]")
+10:33:58 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 1 → titles=['E2E Note 1778130209', 'Honey']
+10:33:58 | [32mINFO    [0m | NotesPage | Found note: E2E Note 1778130209
+10:33:58 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260507_103358.png
+10:33:58 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+10:33:59 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 426ms
+10:34:00 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(normalize-space(),'All')]")
+10:34:00 | [32mINFO    [0m | NotesPage | Opened All tab
+10:34:00 | [32mINFO    [0m | NotesPage | Visible note titles: ['E2E Note 1778130209', 'Honey']
+10:34:00 | [32mINFO    [0m | NotesPage | Checking note existence | Expected='E2E Note 1778130209' | Visible=['E2E Note 1778130209', 'Honey']
+10:34:00 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-note-visible_20260507_103400.png
+10:34:00 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fc1d2581124e02985c0b64
+10:34:00 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fc1d2581124e02985c0b64 | status=200 | 394ms
+10:34:01 | [32mINFO    [0m | conftest | Browser closed

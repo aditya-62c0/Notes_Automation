@@ -1,0 +1,5 @@
+2026-05-06 22:00:34 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 22:00:35 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 22:00:36 | INFO     | LoginPage | Login page loaded
+2026-05-06 22:00:37 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-03-PASS_20260506_220036.png
+2026-05-06 22:00:37 | INFO     | conftest | Browser closed

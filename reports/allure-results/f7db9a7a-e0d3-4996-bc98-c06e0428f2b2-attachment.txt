@@ -1,0 +1,5 @@
+19:24:33 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+19:24:33 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 613ms
+19:24:33 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+19:24:33 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/000000000000000000000000
+19:24:34 | [32mINFO    [0m | api.api_client | ← DELETE /notes/000000000000000000000000 | status=404 | 460ms

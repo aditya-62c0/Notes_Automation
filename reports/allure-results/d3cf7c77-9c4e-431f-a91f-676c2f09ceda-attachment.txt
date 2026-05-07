@@ -1,0 +1,32 @@
+10:55:14 | INFO     | conftest | Launching browser: chrome | headless=False
+10:55:14 | INFO     | WDM | xdist worker is: gw0
+10:55:14 | INFO     | WDM | ====== WebDriver manager ======
+10:55:14 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:55:15 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:55:15 | INFO     | WDM | Driver [/Users/sjaditya/.wdm/gw0/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:55:16 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:55:22 | INFO     | LoginPage | Login page loaded
+10:55:22 | DEBUG    | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:55:22 | DEBUG    | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:55:22 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+10:55:23 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:55:25 | INFO     | conftest | UI login complete
+10:55:25 | INFO     | NotesPage | Already on dashboard page
+10:55:25 | INFO     | NotesPage | Notes dashboard loaded
+10:55:25 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+10:55:25 | INFO     | NotesPage | Notes dashboard loaded
+10:55:25 | DEBUG    | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+10:55:25 | INFO     | api.api_client | ← POST /users/login | status=200 | 449ms
+10:55:25 | INFO     | api.api_client | API login successful — token acquired
+10:55:25 | DEBUG    | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+10:55:26 | INFO     | api.api_client | ← POST /notes | status=200 | 650ms
+10:55:29 | INFO     | NotesPage | Notes visible in UI: ['To Be Deleted 1778131525\nWill be removed via API\nMay 7, 2026 at 05:25:26\nViewEditDelete', 'Instant Visibility 1778131500\nShould appear without reload\nMay 7, 2026 at 05:25:03\nViewEditDelete', 'Automation Note 1778131494\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:24:58\nViewEditDelete', 'Instant Visibility 1778131342\nShould appear without reload\nMay 7, 2026 at 05:22:25\nViewEditDelete', 'Automation Note 1778131256\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:20:59\nViewEditDelete', 'Instant Visibility 1778131074\nShould appear without reload\nMay 7, 2026 at 05:17:56\nViewEditDelete', 'Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+10:55:29 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-before-delete_20260507_105529.png
+10:55:29 | DEBUG    | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fc224681124e02985c2673
+10:55:29 | INFO     | api.api_client | ← DELETE /notes/69fc224681124e02985c2673 | status=200 | 289ms
+10:55:29 | DEBUG    | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+10:55:30 | INFO     | api.api_client | ← GET /notes | status=200 | 561ms
+10:55:32 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-after-delete_20260507_105531.png
+10:55:33 | INFO     | NotesPage | Notes after delete: ['Instant Visibility 1778131500\nShould appear without reload\nMay 7, 2026 at 05:25:03\nViewEditDelete', 'Automation Note 1778131494\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:24:58\nViewEditDelete', 'Instant Visibility 1778131342\nShould appear without reload\nMay 7, 2026 at 05:22:25\nViewEditDelete', 'Automation Note 1778131256\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:20:59\nViewEditDelete', 'Instant Visibility 1778131074\nShould appear without reload\nMay 7, 2026 at 05:17:56\nViewEditDelete', 'Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+10:55:33 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-UI-clean_20260507_105533.png
+10:55:33 | INFO     | conftest | Browser closed

@@ -1,0 +1,12 @@
+2026-05-07 00:52:50 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-07 00:52:52 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-07 00:53:01 | INFO     | LoginPage | Login page loaded
+2026-05-07 00:53:01 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-07 00:53:07 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-07 00:53:09 | INFO     | conftest | UI login complete
+2026-05-07 00:53:09 | INFO     | NotesPage | Already on dashboard page
+2026-05-07 00:53:09 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 00:53:09 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-07 00:53:09 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 00:53:19 | ERROR    | api.api_client | Request failed: HTTPSConnectionPool(host='practice.expandtesting.com', port=443): Read timed out. (read timeout=10)
+2026-05-07 00:53:20 | INFO     | conftest | Browser closed

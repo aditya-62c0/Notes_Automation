@@ -1,0 +1,13 @@
+10:54:48 | INFO     | conftest | Launching browser: chrome | headless=False
+10:54:48 | INFO     | WDM | xdist worker is: gw1
+10:54:48 | INFO     | WDM | ====== WebDriver manager ======
+10:54:48 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:48 | INFO     | WDM | Get LATEST chromedriver version for google-chrome
+10:54:48 | INFO     | WDM | Driver [/Users/sjaditya/.wdm/gw1/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:54:49 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:54:51 | INFO     | LoginPage | Login page loaded
+10:54:51 | DEBUG    | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:54:51 | DEBUG    | LoginPage | Typing 'WrongPassword@999' into ('id', 'password')
+10:54:51 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+10:54:52 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-02-PASS_20260507_105452.png
+10:54:52 | INFO     | conftest | Browser closed

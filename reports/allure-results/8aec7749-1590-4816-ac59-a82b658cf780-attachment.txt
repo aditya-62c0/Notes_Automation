@@ -1,0 +1,31 @@
+23:31:41 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+23:31:41 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+23:31:41 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+23:31:42 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+23:31:42 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+23:31:43 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+23:31:44 | [32mINFO    [0m | LoginPage | Login page loaded
+23:31:44 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+23:31:44 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+23:31:44 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+23:31:44 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+23:31:46 | [32mINFO    [0m | conftest | UI login complete
+23:31:46 | [32mINFO    [0m | NotesPage | Already on dashboard page
+23:31:46 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+23:31:46 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+23:31:46 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+23:31:46 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+23:31:47 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 669ms
+23:31:47 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+23:31:47 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+23:31:48 | [32mINFO    [0m | api.api_client | ← POST /notes | status=200 | 799ms
+23:31:51 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778090507\nWill be removed via API\nMay 6, 2026 at 18:01:47\nViewEditDelete', 'To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+23:31:51 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-before-delete_20260506_233151.png
+23:31:51 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fb820b81124e02985b9dc4
+23:31:51 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fb820b81124e02985b9dc4 | status=200 | 269ms
+23:31:51 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:52 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 278ms
+23:31:53 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-after-delete_20260506_233153.png
+23:31:54 | [32mINFO    [0m | NotesPage | Notes after delete: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+23:31:54 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-UI-clean_20260506_233154.png
+23:31:54 | [32mINFO    [0m | conftest | Browser closed

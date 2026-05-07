@@ -1,0 +1,6 @@
+GET https://practice.expandtesting.com/notes/api/notes
+Status: 200
+Time: 281ms
+
+Response:
+{"success":true,"status":200,"message":"No notes found","data":[]}

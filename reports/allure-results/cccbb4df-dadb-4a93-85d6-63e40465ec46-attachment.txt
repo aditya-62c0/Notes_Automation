@@ -1,0 +1,14 @@
+2026-05-06 23:23:31 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 23:23:32 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 23:23:35 | INFO     | LoginPage | Login page loaded
+2026-05-06 23:23:35 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-06 23:23:36 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-06 23:23:38 | INFO     | conftest | UI login complete
+2026-05-06 23:23:38 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 23:23:38 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 23:23:38 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-06 23:23:38 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 23:23:38 | INFO     | api.api_client | ← POST /users/login | status=200 | 840ms
+2026-05-06 23:23:38 | INFO     | api.api_client | API login successful — token acquired
+2026-05-06 23:23:39 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260506_232338.png
+2026-05-06 23:23:39 | INFO     | conftest | Browser closed

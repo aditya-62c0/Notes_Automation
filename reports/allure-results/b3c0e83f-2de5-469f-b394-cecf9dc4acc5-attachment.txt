@@ -1,0 +1,6 @@
+GET https://practice.expandtesting.com/notes/api/notes
+Status: 200
+Time: 304ms
+
+Response:
+{"success":true,"status":200,"message":"Notes successfully retrieved","data":[{"id":"69fc0c5c81124e02985bd8ea","title":"Honey","description":"E2E description","category":"Home","completed":false,"created_at":"2026-05-07T03:51:56.481Z","updated_at":"2026-05-07T03:51:56.481Z","user_id":"69fb016181124e02985ae4e0"}]}

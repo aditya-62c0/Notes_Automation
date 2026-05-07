@@ -1,0 +1,32 @@
+01:00:39 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+01:00:39 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+01:00:40 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+01:00:40 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+01:00:40 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+01:00:40 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+01:00:42 | [32mINFO    [0m | LoginPage | Login page loaded
+01:00:42 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+01:00:42 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+01:00:42 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+01:00:43 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+01:00:45 | [32mINFO    [0m | conftest | UI login complete
+01:00:45 | [32mINFO    [0m | NotesPage | Already on dashboard page
+01:00:45 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+01:00:45 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+01:00:45 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+01:00:45 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+01:00:46 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 667ms
+01:00:46 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+01:00:46 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+01:00:47 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+01:00:47 | [35mDEBUG   [0m | NotesPage | Typing 'E2E Note 1778095846' into ('id', 'title')
+01:00:47 | [35mDEBUG   [0m | NotesPage | Typing 'E2E description 1778095846' into ('id', 'description')
+01:00:47 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+01:00:48 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+01:00:49 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778095846
+01:00:59 | [32mINFO    [0m | NotesPage | Success banner found in DOM
+01:00:59 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260507_010059.png
+01:00:59 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+01:01:09 | [1m[31mERROR   [0m | api.api_client | Request failed: HTTPSConnectionPool(host='practice.expandtesting.com', port=443): Read timed out. (read timeout=10)
+01:01:10 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260507_010110.png
+01:01:10 | [32mINFO    [0m | conftest | Browser closed

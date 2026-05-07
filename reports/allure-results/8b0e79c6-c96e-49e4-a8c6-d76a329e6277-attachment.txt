@@ -1,0 +1,6 @@
+POST https://practice.expandtesting.com/notes/api/notes
+Status: 200
+Time: 413ms
+
+Response:
+{"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fb953c81124e02985bb23c","title":"To Be Deleted 1778095420","description":"Will be removed via API","category":"Home","completed":false,"created_at":"2026-05-06T19:23:40.749Z","updated_at":"2026-05-06T19:23:40.749Z","user_id":"69fb016181124e02985ae4e0"}}

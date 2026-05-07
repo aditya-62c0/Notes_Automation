@@ -1,0 +1,46 @@
+23:31:07 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+23:31:07 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+23:31:07 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+23:31:07 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+23:31:07 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+23:31:08 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+23:31:09 | [32mINFO    [0m | LoginPage | Login page loaded
+23:31:09 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+23:31:09 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+23:31:09 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+23:31:10 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+23:31:12 | [32mINFO    [0m | conftest | UI login complete
+23:31:12 | [32mINFO    [0m | NotesPage | Already on dashboard page
+23:31:12 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+23:31:12 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+23:31:12 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+23:31:12 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+23:31:12 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 774ms
+23:31:12 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+23:31:12 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+23:31:13 | [35mDEBUG   [0m | NotesPage | Typing 'E2E Note 1778090472' into ('id', 'title')
+23:31:13 | [35mDEBUG   [0m | NotesPage | Typing 'E2E description 1778090472' into ('id', 'description')
+23:31:13 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+23:31:14 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+23:31:15 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778090472
+23:31:25 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260506_233125.png
+23:31:25 | [32mINFO    [0m | NotesPage | Already on dashboard page
+23:31:25 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+23:31:26 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+23:31:27 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00Productivity app development\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+23:31:29 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00JavaScript app development\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+23:31:29 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-note-visible_20260506_233129.png
+23:31:29 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:29 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 347ms
+23:31:29 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:30 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 515ms
+23:31:32 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:32 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 271ms
+23:31:34 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:34 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 299ms
+23:31:36 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:37 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 329ms
+23:31:39 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+23:31:39 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 322ms
+23:31:41 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260506_233141.png
+23:31:41 | [32mINFO    [0m | conftest | Browser closed

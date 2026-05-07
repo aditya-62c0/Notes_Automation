@@ -1,0 +1,46 @@
+00:06:25 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+00:06:25 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+00:06:25 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:06:25 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:06:26 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:06:26 | [32mINFO    [0m | WDM | WebDriver version 147.0.7727.117 selected
+00:06:26 | [32mINFO    [0m | WDM | Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/mac-arm64/chromedriver-mac-arm64.zip
+00:06:26 | [32mINFO    [0m | WDM | About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/147.0.7727.117/mac-arm64/chromedriver-mac-arm64.zip
+00:06:26 | [32mINFO    [0m | WDM | Driver downloading response is 200
+00:06:27 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:06:27 | [32mINFO    [0m | WDM | Driver has been saved in cache [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117]
+00:06:28 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+00:06:29 | [32mINFO    [0m | LoginPage | Login page loaded
+00:06:29 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+00:06:29 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+00:06:29 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+00:06:30 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+00:06:32 | [32mINFO    [0m | conftest | UI login complete
+00:06:32 | [32mINFO    [0m | NotesPage | Already on dashboard page
+00:06:32 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+00:06:32 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+00:06:32 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+00:06:32 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+00:06:33 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 761ms
+00:06:33 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+00:06:33 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+00:06:34 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+00:06:34 | [35mDEBUG   [0m | NotesPage | Typing 'E2E Note 1778092593' into ('id', 'title')
+00:06:34 | [35mDEBUG   [0m | NotesPage | Typing 'E2E description 1778092593' into ('id', 'description')
+00:06:38 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778092593
+00:06:41 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+00:06:41 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+00:06:41 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260507_000641.png
+00:06:41 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 1 → Notes count: 3
+00:06:42 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 2 → Notes count: 3
+00:06:43 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 3 → Notes count: 3
+00:06:44 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 4 → Notes count: 3
+00:06:45 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 5 → Notes count: 3
+00:06:46 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 6 → Notes count: 3
+00:06:47 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 7 → Notes count: 3
+00:06:48 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 8 → Notes count: 3
+00:06:49 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 9 → Notes count: 3
+00:06:50 | [32mINFO    [0m | NotesPage | [WAIT] Attempt 10 → Notes count: 3
+00:06:51 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-note-visible_20260507_000651.png
+00:06:51 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260507_000651.png
+00:06:52 | [32mINFO    [0m | conftest | Browser closed

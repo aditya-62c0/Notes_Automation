@@ -1,0 +1,32 @@
+22:00:47 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+22:00:47 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+22:00:47 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+22:00:47 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+22:00:47 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+22:00:48 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+22:00:49 | [32mINFO    [0m | LoginPage | Login page loaded
+22:00:49 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+22:00:49 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+22:00:49 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+22:00:50 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+22:00:52 | [32mINFO    [0m | conftest | UI login complete
+22:00:52 | [32mINFO    [0m | NotesPage | Already on dashboard page
+22:00:52 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+22:00:52 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+22:00:52 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+22:00:52 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+22:00:53 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+22:00:53 | [35mDEBUG   [0m | NotesPage | Typing 'Automation Note 1778085052' into ('id', 'title')
+22:00:53 | [35mDEBUG   [0m | NotesPage | Typing 'Selenium Python Pytest automation test' into ('id', 'description')
+22:00:53 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+22:00:54 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+22:00:55 | [32mINFO    [0m | NotesPage | Note submitted: Automation Note 1778085052
+22:01:05 | [32mINFO    [0m | NotesPage | Success banner found in DOM
+22:01:05 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-success-banner_20260506_220105.png
+22:01:05 | [32mINFO    [0m | NotesPage | Already on dashboard page
+22:01:05 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+22:01:07 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+22:01:09 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+22:01:11 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+22:01:11 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-PASS_20260506_220111.png
+22:01:11 | [32mINFO    [0m | conftest | Browser closed

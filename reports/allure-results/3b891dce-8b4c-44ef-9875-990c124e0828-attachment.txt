@@ -1,0 +1,49 @@
+00:57:19 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+00:57:19 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+00:57:19 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:57:19 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+00:57:19 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+00:57:20 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+00:57:21 | [32mINFO    [0m | LoginPage | Login page loaded
+00:57:21 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+00:57:21 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+00:57:22 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+00:57:23 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+00:57:25 | [32mINFO    [0m | conftest | UI login complete
+00:57:25 | [32mINFO    [0m | NotesPage | Already on dashboard page
+00:57:25 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+00:57:25 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+00:57:25 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+00:57:25 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+00:57:25 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 676ms
+00:57:25 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+00:57:25 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:26 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 346ms
+00:57:26 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fb47f881124e02985b5078
+00:57:26 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fb47f881124e02985b5078 | status=200 | 509ms
+00:57:26 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fb43cd81124e02985b4905
+00:57:27 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fb43cd81124e02985b4905 | status=200 | 287ms
+00:57:27 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fb164981124e02985b1947
+00:57:27 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fb164981124e02985b1947 | status=200 | 530ms
+00:57:28 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+00:57:28 | [35mDEBUG   [0m | NotesPage | Typing 'E2E Note 1778095645' into ('id', 'title')
+00:57:28 | [35mDEBUG   [0m | NotesPage | Typing 'E2E description 1778095645' into ('id', 'description')
+00:57:29 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+00:57:30 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+00:57:30 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778095645
+00:57:40 | [32mINFO    [0m | NotesPage | Success banner found in DOM
+00:57:41 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260507_005740.png
+00:57:41 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:41 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 802ms
+00:57:43 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:44 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 274ms
+00:57:46 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:46 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 295ms
+00:57:48 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:49 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 512ms
+00:57:51 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:51 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 271ms
+00:57:53 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+00:57:53 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 303ms
+00:57:55 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260507_005755.png
+00:57:55 | [32mINFO    [0m | conftest | Browser closed

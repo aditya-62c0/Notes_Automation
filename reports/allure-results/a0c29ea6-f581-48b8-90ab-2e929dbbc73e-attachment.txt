@@ -1,0 +1,32 @@
+19:23:24 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+19:23:24 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+19:23:24 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:23:24 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:23:24 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+19:23:26 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+19:23:27 | [32mINFO    [0m | LoginPage | Login page loaded
+19:23:27 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+19:23:27 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+19:23:27 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+19:23:28 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+19:23:30 | [32mINFO    [0m | conftest | UI login complete
+19:23:30 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:23:30 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:23:30 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+19:23:30 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:23:30 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+19:23:30 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 728ms
+19:23:30 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+19:23:30 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+19:23:31 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., 'Add Note')]") — falling back to JS click
+19:23:31 | [35mDEBUG   [0m | NotesPage | Typing 'E2E Note 1778075610' into ('id', 'title')
+19:23:31 | [35mDEBUG   [0m | NotesPage | Typing 'E2E description 1778075610' into ('id', 'description')
+19:23:31 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+19:23:32 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+19:23:34 | [32mINFO    [0m | NotesPage | Note submitted: E2E Note 1778075610
+19:23:44 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260506_192344.png
+19:23:44 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:23:44 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:23:54 | [32mINFO    [0m | NotesPage | Notes visible in UI: []
+19:23:54 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260506_192354.png
+19:23:54 | [32mINFO    [0m | conftest | Browser closed

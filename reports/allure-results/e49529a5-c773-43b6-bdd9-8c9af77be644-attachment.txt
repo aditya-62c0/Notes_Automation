@@ -1,0 +1,21 @@
+19:26:29 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+19:26:29 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+19:26:29 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:26:29 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+19:26:29 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+19:26:30 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+19:26:31 | [32mINFO    [0m | LoginPage | Login page loaded
+19:26:31 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+19:26:31 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+19:26:31 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+19:26:32 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+19:26:34 | [32mINFO    [0m | conftest | UI login complete
+19:26:34 | [32mINFO    [0m | NotesPage | Already on dashboard page
+19:26:34 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:26:34 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+19:26:34 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+19:26:34 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., 'Add Note')]")
+19:26:34 | [35mDEBUG   [0m | NotesPage | Clicking ('css selector', "button[type='submit']")
+19:26:35 | [33mWARNING [0m | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+19:27:07 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_create_note_all_empty_20260506_192707.png
+19:27:07 | [32mINFO    [0m | conftest | Browser closed

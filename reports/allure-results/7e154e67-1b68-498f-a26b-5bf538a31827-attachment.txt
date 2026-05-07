@@ -1,0 +1,13 @@
+2026-05-07 10:54:52 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-07 10:54:54 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-07 10:54:56 | INFO     | LoginPage | Login page loaded
+2026-05-07 10:54:56 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-07 10:54:56 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-07 10:54:58 | INFO     | conftest | UI login complete
+2026-05-07 10:54:59 | INFO     | NotesPage | Already on dashboard page
+2026-05-07 10:54:59 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 10:54:59 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-07 10:54:59 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-07 10:55:00 | WARNING  | NotesPage | Click intercepted on ('xpath', "//button[contains(., '+ Add Note')]") — falling back to JS click
+2026-05-07 10:55:26 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-NEG-02-PASS_20260507_105526.png
+2026-05-07 10:55:26 | INFO     | conftest | Browser closed

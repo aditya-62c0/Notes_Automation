@@ -1,0 +1,26 @@
+10:50:50 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+10:50:50 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+10:50:50 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:50:51 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:50:51 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:50:52 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:50:53 | [32mINFO    [0m | LoginPage | Login page loaded
+10:50:53 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:50:53 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:50:53 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+10:50:54 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:50:56 | [32mINFO    [0m | conftest | UI login complete
+10:50:56 | [32mINFO    [0m | NotesPage | Already on dashboard page
+10:50:56 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:50:56 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+10:50:56 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:50:56 | [35mDEBUG   [0m | NotesPage | Clicking ('xpath', "//button[contains(., '+ Add Note')]")
+10:50:57 | [33mWARNING [0m | NotesPage | Click intercepted on ('xpath', "//button[contains(., '+ Add Note')]") — falling back to JS click
+10:50:59 | [32mINFO    [0m | NotesPage | Note submitted: Automation Note 1778131256
+10:51:43 | [32mINFO    [0m | NotesPage | No explicit banner — dashboard visible, form closed; treating as success
+10:51:43 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-success-banner_20260507_105143.png
+10:51:43 | [32mINFO    [0m | NotesPage | Already on dashboard page
+10:51:43 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:51:44 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['Automation Note 1778131256\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:20:59\nViewEditDelete', 'Instant Visibility 1778131074\nShould appear without reload\nMay 7, 2026 at 05:17:56\nViewEditDelete', 'Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+10:51:44 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-04-PASS_20260507_105144.png
+10:51:44 | [32mINFO    [0m | conftest | Browser closed

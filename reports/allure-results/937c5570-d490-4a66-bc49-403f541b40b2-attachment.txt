@@ -1,0 +1,14 @@
+2026-05-06 22:01:50 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 22:01:51 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 22:01:53 | INFO     | LoginPage | Login page loaded
+2026-05-06 22:01:53 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-06 22:01:54 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-06 22:01:56 | INFO     | conftest | UI login complete
+2026-05-06 22:01:56 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 22:01:56 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 22:01:56 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-06 22:01:56 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 22:01:57 | WARNING  | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+2026-05-06 22:01:58 | INFO     | NotesPage | Note submitted: Instant Visibility 1778085116
+2026-05-06 22:02:10 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-06-DOM-check_20260506_220209.png
+2026-05-06 22:02:10 | INFO     | conftest | Browser closed

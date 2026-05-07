@@ -1,0 +1,29 @@
+2026-05-06 23:31:07 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 23:31:08 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 23:31:09 | INFO     | LoginPage | Login page loaded
+2026-05-06 23:31:09 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-06 23:31:10 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-06 23:31:12 | INFO     | conftest | UI login complete
+2026-05-06 23:31:12 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 23:31:12 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 23:31:12 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-06 23:31:12 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 23:31:12 | INFO     | api.api_client | ← POST /users/login | status=200 | 774ms
+2026-05-06 23:31:12 | INFO     | api.api_client | API login successful — token acquired
+2026-05-06 23:31:14 | WARNING  | NotesPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+2026-05-06 23:31:15 | INFO     | NotesPage | Note submitted: E2E Note 1778090472
+2026-05-06 23:31:25 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-success_20260506_233125.png
+2026-05-06 23:31:25 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 23:31:25 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 23:31:26 | INFO     | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+2026-05-06 23:31:27 | INFO     | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00Productivity app development\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+2026-05-06 23:31:29 | INFO     | NotesPage | Notes visible in UI: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00JavaScript app development\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+2026-05-06 23:31:29 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-01-UI-note-visible_20260506_233129.png
+2026-05-06 23:31:29 | INFO     | api.api_client | ← GET /notes | status=200 | 347ms
+2026-05-06 23:31:30 | INFO     | api.api_client | ← GET /notes | status=200 | 515ms
+2026-05-06 23:31:32 | INFO     | api.api_client | ← GET /notes | status=200 | 271ms
+2026-05-06 23:31:34 | INFO     | api.api_client | ← GET /notes | status=200 | 299ms
+2026-05-06 23:31:37 | INFO     | api.api_client | ← GET /notes | status=200 | 329ms
+2026-05-06 23:31:39 | INFO     | api.api_client | ← GET /notes | status=200 | 322ms
+2026-05-06 23:31:41 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/FAIL_test_ui_create_note_visible_in_api_20260506_233141.png
+2026-05-06 23:31:41 | INFO     | conftest | Browser closed

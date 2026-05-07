@@ -1,0 +1,31 @@
+10:50:09 | [32mINFO    [0m | conftest | Launching browser: chrome | headless=False
+10:50:09 | [32mINFO    [0m | WDM | ====== WebDriver manager ======
+10:50:09 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:50:09 | [32mINFO    [0m | WDM | Get LATEST chromedriver version for google-chrome
+10:50:10 | [32mINFO    [0m | WDM | Driver [/Users/sjaditya/.wdm/drivers/chromedriver/mac64/147.0.7727.117/chromedriver-mac-arm64/THIRD_PARTY_NOTICES.chromedriver] found in cache
+10:50:11 | [32mINFO    [0m | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+10:50:13 | [32mINFO    [0m | LoginPage | Login page loaded
+10:50:13 | [35mDEBUG   [0m | LoginPage | Typing 'hihello@gmail.com' into ('id', 'email')
+10:50:13 | [35mDEBUG   [0m | LoginPage | Typing 'Hi@hello' into ('id', 'password')
+10:50:13 | [32mINFO    [0m | LoginPage | Login attempted for hihello@gmail.com
+10:50:14 | [32mINFO    [0m | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+10:50:16 | [32mINFO    [0m | conftest | UI login complete
+10:50:16 | [32mINFO    [0m | NotesPage | Already on dashboard page
+10:50:16 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:50:16 | [32mINFO    [0m | NotesPage | Waiting for Notes dashboard to fully load
+10:50:16 | [32mINFO    [0m | NotesPage | Notes dashboard loaded
+10:50:16 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/users/login
+10:50:17 | [32mINFO    [0m | api.api_client | ← POST /users/login | status=200 | 693ms
+10:50:17 | [32mINFO    [0m | api.api_client | API login successful — token acquired
+10:50:17 | [35mDEBUG   [0m | api.api_client | → POST https://practice.expandtesting.com/notes/api/notes
+10:50:17 | [32mINFO    [0m | api.api_client | ← POST /notes | status=200 | 406ms
+10:50:20 | [32mINFO    [0m | NotesPage | Notes visible in UI: ['To Be Deleted 1778131217\nWill be removed via API\nMay 7, 2026 at 05:20:17\nViewEditDelete', 'Instant Visibility 1778131074\nShould appear without reload\nMay 7, 2026 at 05:17:56\nViewEditDelete', 'Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+10:50:20 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-before-delete_20260507_105020.png
+10:50:20 | [35mDEBUG   [0m | api.api_client | → DELETE https://practice.expandtesting.com/notes/api/notes/69fc211181124e02985c1dc5
+10:50:20 | [32mINFO    [0m | api.api_client | ← DELETE /notes/69fc211181124e02985c1dc5 | status=200 | 529ms
+10:50:20 | [35mDEBUG   [0m | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
+10:50:20 | [32mINFO    [0m | api.api_client | ← GET /notes | status=200 | 291ms
+10:50:22 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-after-delete_20260507_105022.png
+10:50:23 | [32mINFO    [0m | NotesPage | Notes after delete: ['Instant Visibility 1778131074\nShould appear without reload\nMay 7, 2026 at 05:17:56\nViewEditDelete', 'Automation Note 1778130989\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:16:31\nViewEditDelete', 'Instant Visibility 1778130368\nShould appear without reload\nMay 7, 2026 at 05:06:11\nViewEditDelete', 'Automation Note 1778130283\nSelenium Python Pytest automation test\nMay 7, 2026 at 05:04:46\nViewEditDelete', 'Honey\nE2E description\nMay 7, 2026 at 03:51:56\nViewEditDelete']
+10:50:23 | [32mINFO    [0m | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-UI-clean_20260507_105023.png
+10:50:23 | [32mINFO    [0m | conftest | Browser closed

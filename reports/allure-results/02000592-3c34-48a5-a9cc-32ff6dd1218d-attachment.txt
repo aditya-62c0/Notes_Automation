@@ -1,0 +1,6 @@
+2026-05-07 10:50:33 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-07 10:50:35 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-07 10:50:36 | INFO     | LoginPage | Login page loaded
+2026-05-07 10:50:37 | WARNING  | LoginPage | Click intercepted on ('css selector', "button[type='submit']") — falling back to JS click
+2026-05-07 10:50:37 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-03-PASS_20260507_105037.png
+2026-05-07 10:50:37 | INFO     | conftest | Browser closed

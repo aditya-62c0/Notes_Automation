@@ -1,0 +1,21 @@
+2026-05-06 22:05:18 | INFO     | conftest | Launching browser: chrome | headless=False
+2026-05-06 22:05:20 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
+2026-05-06 22:05:21 | INFO     | LoginPage | Login page loaded
+2026-05-06 22:05:21 | INFO     | LoginPage | Login attempted for hihello@gmail.com
+2026-05-06 22:05:21 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
+2026-05-06 22:05:23 | INFO     | conftest | UI login complete
+2026-05-06 22:05:23 | INFO     | NotesPage | Already on dashboard page
+2026-05-06 22:05:23 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 22:05:23 | INFO     | NotesPage | Waiting for Notes dashboard to fully load
+2026-05-06 22:05:23 | INFO     | NotesPage | Notes dashboard loaded
+2026-05-06 22:05:24 | INFO     | api.api_client | ← POST /users/login | status=200 | 441ms
+2026-05-06 22:05:24 | INFO     | api.api_client | API login successful — token acquired
+2026-05-06 22:05:24 | INFO     | api.api_client | ← POST /notes | status=200 | 628ms
+2026-05-06 22:05:27 | INFO     | NotesPage | Notes visible in UI: ['To Be Deleted 1778085324\nWill be removed via API\nMay 6, 2026 at 16:35:24\nViewEditDelete', 'To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01API testing tools\nViewEditDelete']
+2026-05-06 22:05:27 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-before-delete_20260506_220527.png
+2026-05-06 22:05:28 | INFO     | api.api_client | ← DELETE /notes/69fb6dcc81124e02985b811d | status=200 | 655ms
+2026-05-06 22:05:28 | INFO     | api.api_client | ← GET /notes | status=200 | 288ms
+2026-05-06 22:05:29 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-after-delete_20260506_220529.png
+2026-05-06 22:05:31 | INFO     | NotesPage | Notes after delete: ['To Be Deleted 1778075640\nWill be removed via API\nMay 6, 2026 at 13:54:00\nViewEditDelete', 'To Be Deleted 1778074572\nWill be removed via API\nMay 6, 2026 at 13:36:13\nViewEditDelete', 'To Be Deleted 1778062921\nWill be removed via API\nMay 6, 2026 at 10:22:01\nViewEditDelete']
+2026-05-06 22:05:31 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/E2E-02-UI-clean_20260506_220531.png
+2026-05-06 22:05:32 | INFO     | conftest | Browser closed
