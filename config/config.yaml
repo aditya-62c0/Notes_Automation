@@ -6,7 +6,7 @@ ui:
   page_load_timeout: 60
   browser: "chrome"
   headless: false
-  execution: "local"   # local or remote
+  execution: "remote"   # local or remote
   grid_url: "http://localhost:4444/wd/hub"
 
 api:
