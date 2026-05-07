@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'YOUR_GITHUB_REPO'
+                url: 'https://github.com/aditya-62c0/Notes_Automation.git'
             }
         }
 
