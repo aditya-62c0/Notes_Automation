@@ -44,6 +44,7 @@ pipeline {
                 '''
             }
         }
+        
 
         stage('Generate Allure Report') {
             steps {
