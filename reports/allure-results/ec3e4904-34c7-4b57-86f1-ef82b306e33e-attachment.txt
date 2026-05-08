@@ -1,6 +1,0 @@
-POST https://practice.expandtesting.com/notes/api/users/login
-Status: 200
-Time: 442ms
-
-Response:
-{"success":true,"status":200,"message":"Login successful","data":{"id":"69fb016181124e02985ae4e0","name":"qwerty","email":"hihello@gmail.com","token":"2cbb54416f7f45c282b56259a670ff7692eae6f33d4246829e9c59216c0b353d"}}

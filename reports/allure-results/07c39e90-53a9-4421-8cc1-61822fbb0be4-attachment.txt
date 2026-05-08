@@ -1,6 +1,0 @@
-GET https://practice.expandtesting.com/notes/api/notes
-Status: 200
-Time: 368ms
-
-Response:
-{"success":true,"status":200,"message":"Notes successfully retrieved","data":[{"id":"69fb47f881124e02985b5078","title":"To Be Deleted 1778075640","description":"Will be removed via API","category":"Home","completed":false,"created_at":"2026-05-06T13:54:00.763Z","updated_at":"2026-05-06T13:54:00.763Z","user_id":"69fb016181124e02985ae4e0"},{"id":"69fb43cd81124e02985b4905","title":"To Be Deleted 1778074572","description":"Will be removed via API","category":"Home","completed":false,"created_at":"2026-05-06T13:36:13.358Z","updated_at":"2026-05-06T13:36:13.358Z","user_id":"69fb016181124e02985ae4e0"},{"id":"69fb164981124e02985b1947","title":"To Be Deleted 1778062921","description":"Will be removed via API","category":"Home","completed":false,"created_at":"2026-05-06T10:22:01.903Z","updated_at":"2026-05-06T10:22:01.903Z","user_id":"69fb016181124e02985ae4e0"}]}

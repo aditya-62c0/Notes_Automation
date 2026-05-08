@@ -1,3 +1,0 @@
-2026-05-06 22:00:41 | INFO     | api.api_client | ← POST /users/login | status=200 | 442ms
-2026-05-06 22:00:41 | INFO     | api.api_client | API login successful — token acquired
-2026-05-06 22:00:42 | INFO     | api.api_client | ← GET /notes | status=200 | 634ms

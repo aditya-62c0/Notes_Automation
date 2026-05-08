@@ -1,1 +1,0 @@
-{"name": "TC-E2E-02 | Delete note via API → Confirm absent from UI", "status": "skipped", "start": 1778094631813, "stop": 1778094631813, "uuid": "357d6958-2ea0-4ad9-9a6e-816088be0fdc", "testCaseId": "1485bbf63403e60ebcb15b1ce1b9c47f", "fullName": "tests.test_e2e_hybrid.TestE2EHybrid#test_api_delete_note_disappears_from_ui"}

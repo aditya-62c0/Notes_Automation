@@ -1,5 +1,0 @@
-2026-05-07 10:46:15 | INFO     | api.api_client | ← POST /users/login | status=200 | 558ms
-2026-05-07 10:46:15 | INFO     | api.api_client | API login successful — token acquired
-2026-05-07 10:46:16 | INFO     | api.api_client | ← POST /notes | status=200 | 616ms
-2026-05-07 10:46:17 | INFO     | api.api_client | ← DELETE /notes/69fc202081124e02985c17c2 | status=200 | 602ms
-2026-05-07 10:46:17 | INFO     | api.api_client | ← GET /notes | status=200 | 578ms

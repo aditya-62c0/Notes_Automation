@@ -1,7 +1,0 @@
-2026-05-06 19:24:12 | INFO     | conftest | Launching browser: chrome | headless=False
-2026-05-06 19:24:14 | INFO     | LoginPage | Navigating to https://practice.expandtesting.com/notes/app/login
-2026-05-06 19:24:15 | INFO     | LoginPage | Login page loaded
-2026-05-06 19:24:15 | INFO     | LoginPage | Login attempted for hihello@gmail.com
-2026-05-06 19:24:16 | INFO     | LoginPage | Redirected to: https://practice.expandtesting.com/notes/app
-2026-05-06 19:24:18 | INFO     | utils.screenshot | Screenshot saved → /Users/sjaditya/Documents/notes_automation_patched/reports/screenshots/TC-UI-01-PASS_20260506_192418.png
-2026-05-06 19:24:18 | INFO     | conftest | Browser closed

@@ -1,6 +1,0 @@
-DELETE https://practice.expandtesting.com/notes/api/notes/69fc370581124e02985c7f30
-Status: 404
-Time: 17573ms
-
-Response:
-{"success":false,"status":404,"message":"No note was found with the provided ID, Maybe it was deleted"}

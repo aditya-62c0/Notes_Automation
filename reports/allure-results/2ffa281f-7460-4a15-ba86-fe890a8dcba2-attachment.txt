@@ -1,6 +1,0 @@
-DELETE https://practice.expandtesting.com/notes/api/notes/69fc443881124e02985c91d9
-Status: 200
-Time: 515ms
-
-Response:
-{"success":true,"status":200,"message":"Note successfully deleted"}

@@ -1,2 +1,0 @@
-10:54:36 | DEBUG    | api.api_client | → GET https://practice.expandtesting.com/notes/api/notes
-10:54:36 | INFO     | api.api_client | ← GET /notes | status=401 | 532ms

@@ -1,6 +1,0 @@
-POST https://practice.expandtesting.com/notes/api/notes
-Status: 200
-Time: 609ms
-
-Response:
-{"success":true,"status":200,"message":"Note successfully created","data":{"id":"69fc1d6281124e02985c0c5b","title":"To Delete 1778130273","description":"This note will be deleted","category":"Home","completed":false,"created_at":"2026-05-07T05:04:34.189Z","updated_at":"2026-05-07T05:04:34.189Z","user_id":"69fb016181124e02985ae4e0"}}

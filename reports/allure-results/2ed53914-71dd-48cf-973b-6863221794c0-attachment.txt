@@ -1,6 +1,0 @@
-POST https://practice.expandtesting.com/notes/api/notes
-Status: 400
-Time: 4458ms
-
-Response:
-{"success":false,"status":400,"message":"Title must be between 4 and 100 characters"}
