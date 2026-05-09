@@ -10,6 +10,7 @@ import time
 
 from config.environment import Credentials
 from pages.notes_page import NotesPage
+from core.performance.ui_performance import UIPerformance
 
 
 @allure.feature("FR-02: Create Note via UI | FR-03: Instant Visibility")

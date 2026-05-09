@@ -1,5 +1,6 @@
 import pytest
 import allure
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
@@ -12,6 +13,7 @@ from pages.login_page import LoginPage
 from pages.notes_page import NotesPage
 from utils.screenshot import capture
 from utils.logger import get_logger
+from core.mcp.llm_failure_analysis import LLMFailureAnalyzer
 import time
 
 log = get_logger("conftest")
@@ -102,10 +104,36 @@ def driver(request):
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
-    """Make test result available to fixtures via request.node.rep_*."""
+    """Make test result available and attach MCP failure analysis."""
     outcome = yield
     rep = outcome.get_result()
     setattr(item, f"rep_{rep.when}", rep)
+
+    if rep.when == "call" and rep.failed:
+        current_url = None
+
+        driver = item.funcargs.get("driver") or item.funcargs.get("authenticated_driver")
+
+        if driver:
+            try:
+                current_url = driver.current_url
+            except Exception:
+                current_url = "Unable to capture current URL"
+
+        analysis = LLMFailureAnalyzer().analyze(
+            test_name=item.name,
+            error_message=rep.longreprtext,
+            current_url=current_url,
+        )
+
+        allure.attach(
+            json.dumps(analysis, indent=2),
+            name="MCP Failure Analysis",
+            attachment_type=allure.attachment_type.JSON,
+        )
+
+        log.error(f"MCP failure analysis attached for test: {item.name}")
+
 
 
 # ── Authenticated UI session ───────────────────────────────────────────────────

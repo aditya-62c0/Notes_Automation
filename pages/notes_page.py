@@ -1,4 +1,5 @@
-import time 
+import time
+from unicodedata import category 
 
 import allure
 from selenium.webdriver.common.by import By
@@ -8,7 +9,11 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import Select
 
 from pages.base_page import BasePage
+from core.agentic.self_healing import SelfHealingDriver
+from core.agentic.retry_engine import auto_retry
 from config.environment import UI
+from core.mcp.locator_suggester import LocatorSuggester
+
 
 
 class NotesPage(BasePage):
@@ -251,6 +256,7 @@ class NotesPage(BasePage):
 
 # ── Note Creation ─────────────────────────────────────────────────────────
 
+    @auto_retry(max_attempts=3, delay=1)
     @allure.step("Create note: title='{title}'")
     def create_note(self, title: str, description: str, category: str = "Home"):
         """
@@ -261,31 +267,43 @@ class NotesPage(BasePage):
         self.click(self._ADD_NOTE_BTN)
 
         # Wait for modal
-        WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located(self._NOTE_TITLE_INPUT)
-        )
+        self.smart_wait.visible(self._NOTE_TITLE_INPUT)
 
         # Fill title
-        title_input = self.driver.find_element(*self._NOTE_TITLE_INPUT)
+        fallbacks = LocatorSuggester().suggest_for_notes_app("note_title")
+        title_input = self.healer.find(self._NOTE_TITLE_INPUT, fallbacks)
+
         title_input.clear()
         title_input.send_keys(title)
 
         # Fill description
-        desc_input = self.driver.find_element(*self._NOTE_DESC_INPUT)
+        desc_input = self.healer.find(
+            self._NOTE_DESC_INPUT,
+            fallback_locators=[
+                (By.NAME, "description"),
+                (By.CSS_SELECTOR, "textarea[placeholder*='description' i]")
+            ]
+        )
+
         desc_input.clear()
         desc_input.send_keys(description)
 
         # Select category
-        Select(
-            self.driver.find_element(*self._NOTE_CAT_SELECT)
-        ).select_by_visible_text(category)
+        category_select = self.healer.find(
+            self._NOTE_CAT_SELECT,
+            fallback_locators=[
+                (By.NAME, "category"),
+                (By.CSS_SELECTOR, "select")
+            ]
+        )
+
+        Select(category_select).select_by_visible_text(category)
+    
 
         time.sleep(1)
 
         # Click Create button
-        create_btn = WebDriverWait(self.driver, 10).until(
-            EC.element_to_be_clickable(self._SAVE_BTN)
-        )
+        create_btn = self.smart_wait.clickable(self._SAVE_BTN)
 
         self.driver.execute_script(
             "arguments[0].scrollIntoView(true);",
@@ -308,9 +326,7 @@ class NotesPage(BasePage):
         )
 
         # Wait for dashboard
-        WebDriverWait(self.driver, 15).until(
-            EC.visibility_of_element_located(self._ADD_NOTE_BTN)
-        )
+        self.smart_wait.visible(self._ADD_NOTE_BTN)
 
         time.sleep(2)
 

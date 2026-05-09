@@ -13,6 +13,8 @@ import time
 
 from api.api_client import NotesAPIClient
 from config.environment import API
+from core.performance.api_performance import APIPerformance
+from core.performance.trend_logger import TrendLogger
 
 
 @allure.feature("FR-04: API GET /notes | FR-06: Delete via API | FR-08: Response Time | FR-09: Negative API")
@@ -46,7 +48,8 @@ class TestNotesAPI:
 
         with allure.step("Send GET /notes and record elapsed time"):
             resp = api_client.get_notes()
-            elapsed = resp["_elapsed_ms"]
+            elapsed = APIPerformance().assert_response_time(resp, API.MAX_RESPONSE_MS)
+            TrendLogger().log("test_get_notes_response_time", "api_response_ms", elapsed)
 
         with allure.step(f"Assert elapsed {elapsed:.0f}ms < {API.MAX_RESPONSE_MS}ms"):
             allure.attach(
@@ -54,8 +57,8 @@ class TestNotesAPI:
                 name="Response Time",
                 attachment_type=allure.attachment_type.TEXT,
             )
-            assert elapsed < API.MAX_RESPONSE_MS, \
-                f"Response took {elapsed:.0f}ms — exceeds {API.MAX_RESPONSE_MS}ms threshold"
+            # assert elapsed < API.MAX_RESPONSE_MS, \
+            #     f"Response took {elapsed:.0f}ms — exceeds {API.MAX_RESPONSE_MS}ms threshold"
 
     @allure.title("TC-API-03 | DELETE /notes/{id} removes a note")
     @allure.severity(allure.severity_level.CRITICAL)

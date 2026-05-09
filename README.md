@@ -111,3 +111,25 @@ notes_automation/
 | TC-NEG-03 | test_notes_api.py | No auth token → 401 |
 | TC-NEG-04 | test_notes_api.py | Invalid payload → 400 |
 | TC-NEG-05 | test_notes_api.py | Bad token → 401 |
+
+## Agentic Automation
+
+Implemented:
+- Self-healing locators
+- Auto-retry for flaky UI actions
+- Intelligent waits
+- Decision-based rerun logic
+
+## MCP Layer
+
+Implemented:
+- LLM-style test data generation
+- Failure analysis helper
+- Locator suggestion helper
+
+## Performance Engineering
+
+Implemented:
+- API response time validation
+- UI navigation timing
+- JSONL trend logging in reports/performance_trends.jsonl

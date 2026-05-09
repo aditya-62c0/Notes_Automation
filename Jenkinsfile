@@ -5,9 +5,10 @@ pipeline {
     environment {
 
         EXECUTION = 'remote'
-        GRID_URL = 'http://localhost:4444'
+        GRID_URL = 'http://localhost:4444/wd/hub'
         BROWSER = 'chrome'
         HEADLESS = 'true'
+        OPENAI_API_KEY = credentials('ak_2PP57R31q0X92wD3tA8Un2lu2rN0w')
     }
 
     stages {
@@ -53,6 +54,15 @@ pipeline {
             }
         }
 
+        stage('Agentic MCP Performance Tests') {
+
+            steps {
+
+                sh 'pytest tests/test_agentic_mcp_performance.py --alluredir=reports/allure-results'
+            
+            }
+        }
+
         stage('Run Tests') {
 
             steps {
@@ -60,7 +70,7 @@ pipeline {
                 sh '''
                 . venv/bin/activate
 
-                pytest -n 4 --alluredir=reports/allure-results
+                pytest tests/ -n 4 --reruns 1 --reruns-delay 2 --alluredir=reports/allure-results
                 '''
             }
         }

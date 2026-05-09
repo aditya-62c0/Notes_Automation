@@ -14,6 +14,8 @@ from config.environment import UI
 from utils.logger import get_logger
 from utils.screenshot import capture
 from utils.retry import retry
+from core.agentic.self_healing import SelfHealingDriver
+from core.agentic.intelligent_waits import IntelligentWait
 
 
 class BasePage:
@@ -21,6 +23,9 @@ class BasePage:
         self.driver = driver
         self.wait = WebDriverWait(driver, UI.EXPLICIT_WAIT)
         self.log = get_logger(self.__class__.__name__)
+        self.healer = SelfHealingDriver(driver)
+        self.smart_wait = IntelligentWait(driver, UI.EXPLICIT_WAIT)
+
 
     # ── Navigation ────────────────────────────────────────────────────────────
 
@@ -28,6 +33,7 @@ class BasePage:
         target = url or UI.BASE_URL
         self.log.info(f"Navigating to {target}")
         self.driver.get(target)
+        self.smart_wait.page_ready()
 
     def refresh(self):
         self.log.info("Refreshing page")
@@ -42,16 +48,25 @@ class BasePage:
     # ── Wait helpers ──────────────────────────────────────────────────────────
 
     def wait_for_visible(self, locator: tuple, timeout: int = None) -> WebElement:
-        _wait = WebDriverWait(self.driver, timeout or UI.EXPLICIT_WAIT)
-        return _wait.until(EC.visibility_of_element_located(locator))
+        if timeout:
+            return WebDriverWait(self.driver, timeout).until(
+                EC.visibility_of_element_located(locator)
+            )
+        return self.smart_wait.visible(locator)
 
     def wait_for_clickable(self, locator: tuple, timeout: int = None) -> WebElement:
-        _wait = WebDriverWait(self.driver, timeout or UI.EXPLICIT_WAIT)
-        return _wait.until(EC.element_to_be_clickable(locator))
+        if timeout:
+            return WebDriverWait(self.driver, timeout).until(
+                EC.element_to_be_clickable(locator)
+            )
+        return self.smart_wait.clickable(locator)
 
     def wait_for_present(self, locator: tuple, timeout: int = None) -> WebElement:
-        _wait = WebDriverWait(self.driver, timeout or UI.EXPLICIT_WAIT)
-        return _wait.until(EC.presence_of_element_located(locator))
+        if timeout:
+            return WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located(locator)
+            )
+        return self.smart_wait.present(locator)
 
     def wait_for_text(self, locator: tuple, text: str, timeout: int = None) -> WebElement:
         _wait = WebDriverWait(self.driver, timeout or UI.EXPLICIT_WAIT)
