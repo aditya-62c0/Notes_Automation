@@ -8,7 +8,7 @@ pipeline {
         GRID_URL = 'http://localhost:4444/wd/hub'
         BROWSER = 'chrome'
         HEADLESS = 'true'
-        OPENAI_API_KEY = credentials('ak_2PP57R31q0X92wD3tA8Un2lu2rN0w')
+        OPENAI_API_KEY = credentials('OPENAI_API_KEY')
     }
 
     stages {
