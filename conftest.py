@@ -155,19 +155,16 @@ def api_client() -> NotesAPIClient:
     client.login()
     return client
 
-
 @pytest.fixture(scope="function")
 def anon_api_client() -> NotesAPIClient:
     """Unauthenticated client for negative tests."""
     return NotesAPIClient()
-
 
 # ── Page Object fixtures ───────────────────────────────────────────────────────
 
 @pytest.fixture(scope="function")
 def login_page(driver) -> LoginPage:
     return LoginPage(driver)
-
 
 @pytest.fixture(scope="function")
 def notes_page(authenticated_driver) -> NotesPage:
@@ -178,7 +175,6 @@ def notes_page(authenticated_driver) -> NotesPage:
     page.wait_for_page_loaded()
 
     return page
-
 
 # ── Shared note fixture (creates via API, yields id+data, cleans up) ───────────
 

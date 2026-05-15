@@ -45,7 +45,6 @@ class UI:
         _cfg["ui"].get("grid_url", "http://localhost:4444")
     )
 
-
 class API:
     BASE_URL: str = _cfg["api"]["base_url"]
 
